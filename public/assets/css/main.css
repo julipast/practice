@@ -1,0 +1,176 @@
+#search-results{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 1; /* змінна для забезпечення накладення елементу */
+}
+#search-results li {
+    border-radius: 16px;
+    background: none;
+    padding: 10px;
+    cursor: pointer;
+    list-style: none;
+
+}
+
+#search-results li:hover {
+    background:rgba(255, 255, 255, 0.40);
+}
+.d-grid {
+    display: grid;
+    height: 100vh; /* Опціонально, щоб контейнер був на весь екран */
+}
+.text{
+    color: #FFF;
+    font-family: Roboto, serif;
+    font-size: 40px;
+    font-weight: 700;
+
+}
+#custom-text{
+    margin: 20px;
+    color: #FFF;
+    font-family: Roboto, serif;
+    font-size: 24px;
+
+}
+.promo-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 80px;
+    background: rgba(0, 0, 0, 0.58);
+    height: 75vh;
+    padding: 50px;
+
+}
+.search-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 15%;
+}
+.park-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    padding: 0 8px;
+
+}
+.my-reserve-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    padding: 0 8px;
+    overflow-y: auto; /* Додаємо прокрутку по вертикалі */
+    max-height: 500px; /* Задаємо максимальну висоту контейнера для прокрутки */
+}
+
+#search-input{
+    border-radius: 80px;
+    background: rgba(255, 255, 255, 0.80);
+    margin-bottom: 12px;
+}
+#daterange{
+    border-radius: 80px;
+    background: rgba(255, 255, 255, 0.80);
+    height: 38px;
+    width: 278px;
+    padding: 6px 12px ;
+    border-width: 1px;
+    margin-bottom: 12px;
+}
+.park-item{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 35px;
+    background: #D9D9D9;
+    padding: 1% 3% ;
+    margin: 8px 8px;
+    flex:   0 0 calc(50% - 16px);
+    text-align: start;
+    max-height: 30%;
+}
+.my-reserve-item{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 3% ;
+    margin: 8px 8px;
+    flex:   0 0 calc(50% - 16px);
+    text-align: start;
+    max-height: 45%;
+    border-radius: 21px;
+    background: rgba(255, 255, 255, 0.73);
+}
+#custom-row{
+    padding-top: 0;
+    padding-right: 0;
+}
+.reservation-info {
+    width: 100%; /* Кожен елемент займає всю ширину флекс-контейнера */
+    align-self: center;
+
+
+}
+#status-accept{
+    text-align: center;
+}
+
+#status{
+    color: red;
+    text-align: center;
+}
+.number{
+    width: 50%;
+}
+
+#reserve-about-parking{
+    border-radius: 35px;
+    background: #D9D9D9;
+    max-height: 100%;
+    margin: 0;
+}
+
+.name-park{
+    flex:   0 0 calc(100%);
+    color: rgba(0, 0, 0, 0.67);
+    font-family: Roboto, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.reserve-button{
+    border-radius: 80px;
+    margin: 2% 2% 2% 0;
+    flex: 0 0 calc(50% - 30px);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.reserve-create{
+    display: flex;
+    background: #D9D9D9;
+}
+
+#select-car{
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .park-row{
+        height: 70%;
+    }
+    .park-item {
+        flex-basis: calc(100% - 16px); /* Повний рядок для екранів менше 600px */
+        margin: 1%;
+    }
+
+
+}

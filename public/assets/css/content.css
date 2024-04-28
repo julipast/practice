@@ -1,0 +1,61 @@
+.reserve-row{
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 21px;
+    justify-content: start;
+    margin-top: 50px;
+    background: #1F1F1F;
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: 0px;
+
+}
+.text-reserv{
+    margin: 2%;
+    color: #FFF;
+    font-family: Roboto,sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.my-text-reserv{
+
+    color: #FFF;
+    font-family: Roboto,sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 3% ;
+    align-self: center;
+}
+
+.reserv-det-text{
+    color: rgba(0, 0, 0, 0.47);
+    font-family: Roboto,sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.details{
+    padding-top: 0.1%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 86%;
+    border-radius: 21px;
+    background: rgba(0, 56, 139, 0.76);
+}
+.accept-reserve{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 84%;
+    border-radius: 21px;
+    background: rgba(255, 255, 255, 0.73);
+    padding: 2%;
+}
+

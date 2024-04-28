@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.53) 11.24%, rgba(205, 205, 205, 0.22) 71.07%, rgba(217, 217, 217, 0.22) 98.78%), url('img/car.jpg');
+    background-size:  cover;
+
+    @media (max-width: 540px) {
+        background:rgba(0, 0, 0, 0.53);
+    }
+}
+
+
+.navbar {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #ffffff;
+}
+.navbar-dark .navbar-nav .nav-link.underline {
+    text-decoration: underline;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #ffffff;
+    text-decoration: underline;
+}
+#search-results{
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.40);
+}
+.btn:focus, .btn:active {
+    outline: none;
+    border: none;
+}
+
+
